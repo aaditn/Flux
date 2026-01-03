@@ -2117,18 +2117,16 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:NMOS"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Transistor_FET:Q_NMOS_GSD"
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+				(at 5.08 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2136,8 +2134,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "NMOS"
-				(at 5.08 -1.27 0)
+			(property "Value" "Q_NMOS_GSD"
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2154,16 +2152,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2172,34 +2161,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Device" "NMOS"
-				(at 0 -17.145 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
+			(property "Description" "N-MOSFET transistor, gate/source/drain"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2208,7 +2170,16 @@
 					(hide yes)
 				)
 			)
-			(symbol "NMOS_0_1"
+			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_NMOS_GSD_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -2352,7 +2323,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+						(xy 2.921 0.381) (xy 3.683 0.381)
 					)
 					(stroke
 						(width 0)
@@ -2375,7 +2346,7 @@
 					)
 				)
 			)
-			(symbol "NMOS_1_1"
+			(symbol "Q_NMOS_GSD_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2386,7 +2357,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2404,7 +2375,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2422,7 +2393,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3024,6 +2995,12 @@
 		(uuid "1e6cd541-04db-42a4-88e1-036625ea86cf")
 	)
 	(junction
+		(at 124.46 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48e16e7b-56cd-4a4c-bc05-d2d6f1e031aa")
+	)
+	(junction
 		(at 92.71 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3054,6 +3031,12 @@
 		(uuid "c0a11801-0c7d-4f23-9e09-cfa7ad762891")
 	)
 	(junction
+		(at 114.3 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c22d7627-ac8e-4765-ae77-9492f7ed5961")
+	)
+	(junction
 		(at 92.71 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3064,6 +3047,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e00b3e55-694f-4e9b-8092-89afa8390cfa")
+	)
+	(junction
+		(at 114.3 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb06e461-f170-4622-b64c-801f96cabdb2")
 	)
 	(junction
 		(at 92.71 114.3)
@@ -3124,10 +3113,6 @@
 	(no_connect
 		(at 97.79 43.18)
 		(uuid "7bec1cb1-e5b0-459c-8b1e-b5b125a6f05d")
-	)
-	(no_connect
-		(at 124.46 81.28)
-		(uuid "a1eb7af1-b7fe-4b09-a2d9-d4995942c535")
 	)
 	(no_connect
 		(at 97.79 35.56)
@@ -3369,6 +3354,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 90.17) (xy 114.3 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a338deb-aeaf-430f-8bcd-d058a03587d6")
+	)
+	(wire
+		(pts
 			(xy 93.98 50.8) (xy 97.79 50.8)
 		)
 		(stroke
@@ -3399,6 +3394,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 74.93) (xy 114.3 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "788583b5-2f59-411d-a980-3dcf313d1df5")
+	)
+	(wire
+		(pts
 			(xy 135.89 143.51) (xy 138.43 143.51)
 		)
 		(stroke
@@ -3409,7 +3414,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 91.44) (xy 114.3 93.98)
+			(xy 114.3 91.44) (xy 114.3 95.25)
 		)
 		(stroke
 			(width 0)
@@ -3446,6 +3451,16 @@
 			(type default)
 		)
 		(uuid "7d458884-399d-4c97-b8a0-4ae5522493b6")
+	)
+	(wire
+		(pts
+			(xy 124.46 74.93) (xy 144.78 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "806cab15-1e28-4729-a790-9c1f331e5a5a")
 	)
 	(wire
 		(pts
@@ -3529,6 +3544,26 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 74.93) (xy 124.46 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cacff29-e19e-4390-8693-e8af1f546ffe")
+	)
+	(wire
+		(pts
+			(xy 144.78 74.93) (xy 144.78 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d190b04-9847-4c93-b874-9498cb0bc00a")
+	)
+	(wire
+		(pts
 			(xy 40.64 114.3) (xy 43.18 114.3)
 		)
 		(stroke
@@ -3536,6 +3571,16 @@
 			(type default)
 		)
 		(uuid "9e7fa16d-50e9-48ea-9d6f-8791749f99e3")
+	)
+	(wire
+		(pts
+			(xy 114.3 90.17) (xy 114.3 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a06dafa2-d8cf-4127-aebd-0d8ed6b4483a")
 	)
 	(wire
 		(pts
@@ -3609,6 +3654,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 74.93) (xy 124.46 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1148ea5-77a0-4fa3-85f6-3544d5bd225f")
+	)
+	(wire
+		(pts
 			(xy 80.01 114.3) (xy 82.55 114.3)
 		)
 		(stroke
@@ -3619,7 +3674,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 72.39) (xy 114.3 76.2)
+			(xy 114.3 72.39) (xy 114.3 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4250,7 +4305,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 132.08 140.208 90)
 			(effects
 				(font
@@ -4320,7 +4375,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal"
 			(at 69.85 81.28 0)
 			(effects
 				(font
@@ -4395,7 +4450,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 90.932 173.99 90)
 			(effects
 				(font
@@ -4530,7 +4585,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 41.402 139.7 90)
 			(effects
 				(font
@@ -4861,7 +4916,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Custom:2.1x5.5_Barrel_Jack"
 			(at 50.8 55.88 0)
 			(effects
 				(font
@@ -4994,7 +5049,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 86.36 149.098 90)
 			(effects
 				(font
@@ -5063,7 +5118,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 90.932 106.68 90)
 			(effects
 				(font
@@ -5198,7 +5253,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 90.932 139.7 90)
 			(effects
 				(font
@@ -5396,7 +5451,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 132.08 150.368 90)
 			(effects
 				(font
@@ -5439,7 +5494,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "Transistor_FET:Q_NMOS_GSD")
 		(at 48.26 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5466,7 +5521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
 			(at 53.34 111.76 0)
 			(effects
 				(font
@@ -5475,8 +5530,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 48.26 127 0)
+		(property "Datasheet" "~"
+			(at 48.26 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5484,7 +5539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
 			(at 48.26 114.3 0)
 			(effects
 				(font
@@ -5563,7 +5618,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 36.83 116.078 90)
 			(effects
 				(font
@@ -5695,7 +5750,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 86.36 116.078 90)
 			(effects
 				(font
@@ -5870,7 +5925,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "Transistor_FET:Q_NMOS_GSD")
 		(at 97.79 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5897,7 +5952,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
 			(at 102.87 179.07 0)
 			(effects
 				(font
@@ -5906,8 +5961,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 97.79 194.31 0)
+		(property "Datasheet" "~"
+			(at 97.79 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5915,7 +5970,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
 			(at 97.79 181.61 0)
 			(effects
 				(font
@@ -5996,7 +6051,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 41.402 106.68 90)
 			(effects
 				(font
@@ -6064,7 +6119,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Custom:150066M153000"
 			(at 143.51 144.78 0)
 			(effects
 				(font
@@ -6282,7 +6337,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 204.47 53.6448 0)
 			(effects
 				(font
@@ -6325,7 +6380,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "Transistor_FET:Q_NMOS_GSD")
 		(at 97.79 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6352,7 +6407,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
 			(at 102.87 111.76 0)
 			(effects
 				(font
@@ -6361,8 +6416,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 97.79 127 0)
+		(property "Datasheet" "~"
+			(at 97.79 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6370,7 +6425,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
 			(at 97.79 114.3 0)
 			(effects
 				(font
@@ -6491,7 +6546,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "Transistor_FET:Q_NMOS_GSD")
 		(at 48.26 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6518,7 +6573,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
 			(at 53.34 179.07 0)
 			(effects
 				(font
@@ -6527,8 +6582,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 48.26 194.31 0)
+		(property "Datasheet" "~"
+			(at 48.26 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6536,7 +6591,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
 			(at 48.26 181.61 0)
 			(effects
 				(font
@@ -6591,7 +6646,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "Transistor_FET:Q_NMOS_GSD")
 		(at 48.26 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6618,7 +6673,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
 			(at 53.34 144.78 0)
 			(effects
 				(font
@@ -6627,8 +6682,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 48.26 160.02 0)
+		(property "Datasheet" "~"
+			(at 48.26 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6636,7 +6691,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
 			(at 48.26 147.32 0)
 			(effects
 				(font
@@ -6912,7 +6967,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 36.83 149.098 90)
 			(effects
 				(font
@@ -6979,7 +7034,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 187.96 53.6448 0)
 			(effects
 				(font
@@ -7048,7 +7103,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 41.402 173.99 90)
 			(effects
 				(font
@@ -7245,7 +7300,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 36.83 183.388 90)
 			(effects
 				(font
@@ -7442,7 +7497,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 86.36 183.388 90)
 			(effects
 				(font
@@ -7550,7 +7605,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
+		(lib_id "Transistor_FET:Q_NMOS_GSD")
 		(at 97.79 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7577,7 +7632,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
 			(at 102.87 144.78 0)
 			(effects
 				(font
@@ -7586,8 +7641,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 97.79 160.02 0)
+		(property "Datasheet" "~"
+			(at 97.79 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7595,7 +7650,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
 			(at 97.79 147.32 0)
 			(effects
 				(font
@@ -7675,7 +7730,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 193.675 49.53 0)
 			(effects
 				(font
@@ -8132,8 +8187,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 144.78 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eacba7ad-f88d-4c4f-b462-b3d219d2bb1d")
+		(property "Reference" "C3"
+			(at 148.59 85.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1 uF"
+			(at 148.59 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 145.7452 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 144.78 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14196953-4086-420e-91a8-458ab21b967f")
+		)
+		(pin "2"
+			(uuid "bc8b925d-ea0e-4c9d-a151-2e7f10307a11")
+		)
+		(instances
+			(project ""
+				(path "/3676c628-00eb-4f01-8b84-a1888172e57e"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 114.3 93.98 0)
+		(at 114.3 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8142,7 +8267,7 @@
 		(fields_autoplaced yes)
 		(uuid "f98c2500-2030-4187-8d5b-697e5d80634c")
 		(property "Reference" "#PWR012"
-			(at 114.3 100.33 0)
+			(at 114.3 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8151,7 +8276,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.3 99.06 0)
+			(at 114.3 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8159,7 +8284,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 93.98 0)
+			(at 114.3 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8168,7 +8293,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 93.98 0)
+			(at 114.3 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8177,7 +8302,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 93.98 0)
+			(at 114.3 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8222,7 +8347,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 132.08 145.288 90)
 			(effects
 				(font
