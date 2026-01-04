@@ -5573,7 +5573,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
+		(property "Value" "DMN1019"
 			(at 54.61 115.5699 0)
 			(effects
 				(font
@@ -5977,7 +5977,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
+		(property "Value" "PJA3432"
 			(at 104.14 182.8799 0)
 			(effects
 				(font
@@ -6405,7 +6405,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
+		(property "Value" "PJA3432"
 			(at 104.14 115.5699 0)
 			(effects
 				(font
@@ -6544,7 +6544,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
+		(property "Value" "DMN1019"
 			(at 54.61 182.8799 0)
 			(effects
 				(font
@@ -6617,7 +6617,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
+		(property "Value" "DMN1019"
 			(at 54.61 148.5899 0)
 			(effects
 				(font
@@ -7549,7 +7549,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
+		(property "Value" "PJA3432"
 			(at 104.14 148.5899 0)
 			(effects
 				(font
